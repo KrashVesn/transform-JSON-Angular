@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-controller="mainCtrl as ctrl">
+
+	<div class="header">
+		<div class="header__upload" upload-directive>
+			<input class="inp_file" type="file" id="file" multiple/>
+			<label for="file">{{filename}}</label>
+			<button class="disabled">Распарсить json</button></br>
+			<span class="error" ng-show="many_files">Выберите один файл</span>
+			<span class="error" ng-show="not_file">Выберите файл с расширением json</span>
+			<span class="error" ng-show="wrong_file">В выбранном файле допущена ошибка, повторите попытку</span>
+		</div>
+		<div class="header__save" save-directive>
+			<span>Введите имя файла для сохранения</span>
+			<input type="text" ng-model="save_filename">
+			<button class="btn" ng-click="save_file()" ng-disabled="active">Сохранить</button>
+			<span class="error" ng-show="no_file">Перед сохранением нужно распарсить файл</span>
+		</div>
+		<div class="header__test" test-directive>
+			<button class="btn" ng-click="get()" ng-disabled="active">Вывести тестовый файл</button>
+		</div>
+	</div>
+	<div class="content" id='container'>
+	</div>
+
+
+
+
+	<script src="js/angular.js"></script>
+	<script src="js/app.module.js"></script>
+	<script src="js/mainController.js"></script>
+	<script src="js/dragdropDirective.js"></script>
+	<script src="js/addDirective.js"></script>
+	<script src="js/transformDirective.js"></script>
+	<script src="js/saveDirective.js"></script>
+	<script src="js/uploadDirective.js"></script>
+	<script src="js/parseDirective.js"></script>
+
+</body>
+</html>

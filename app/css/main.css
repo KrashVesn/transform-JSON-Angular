@@ -1,0 +1,124 @@
+body {
+  background: #fff;
+  font-size: 18px; }
+
+.header {
+  width: 700px;
+  height: 230px;
+  left: 40%;
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  border: 1px solid grey;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  text-align: center; }
+
+.btn {
+  display: inline-block;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  width: 200px;
+  margin: 15px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 0 #ccc, 2px 2px 0 #c9c9c9, 3px 4px 0 #bbb, -1px 1px 0 #ccc, -2px 2px 0 #c9c9c9, -3px 4px 0 #bbb;
+          box-shadow: 1px 1px 0 #ccc, 2px 2px 0 #c9c9c9, 3px 4px 0 #bbb, -1px 1px 0 #ccc, -2px 2px 0 #c9c9c9, -3px 4px 0 #bbb;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2ff52), to(#91e842));
+  background: -webkit-linear-gradient(top, #d2ff52 0%, #91e842 100%);
+  background: linear-gradient(to bottom, #d2ff52 0%, #91e842 100%); }
+
+.btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f58f99), to(#bf1e2e));
+  background: -webkit-linear-gradient(top, #f58f99, #bf1e2e);
+  background: linear-gradient(to bottom, #f58f99, #bf1e2e);
+  outline: none; }
+
+.btn:active {
+  background: -webkit-linear-gradient(45deg, #efc5ca 0%, #d24b5a 50%, #ba2737 51%, #f18e99 100%);
+  background: linear-gradient(45deg, #efc5ca 0%, #d24b5a 50%, #ba2737 51%, #f18e99 100%);
+  padding: 7px;
+  margin-top: 13px;
+  margin-bottom: 13px; }
+
+.disabled {
+  display: inline-block;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  width: 200px;
+  margin: 15px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 0 #ccc, 2px 2px 0 #c9c9c9, 3px 4px 0 #bbb, -1px 1px 0 #ccc, -2px 2px 0 #c9c9c9, -3px 4px 0 #bbb;
+          box-shadow: 1px 1px 0 #ccc, 2px 2px 0 #c9c9c9, 3px 4px 0 #bbb, -1px 1px 0 #ccc, -2px 2px 0 #c9c9c9, -3px 4px 0 #bbb;
+  background: -webkit-linear-gradient(45deg, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+  background: linear-gradient(45deg, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); }
+
+.inp_file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+label {
+  width: 250px;
+  height: 35px;
+  font-size: 20px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  background: black;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 0 #ccc, 2px 2px 0 #c9c9c9, 3px 4px 0 #bbb, -1px 1px 0 #ccc, -2px 2px 0 #c9c9c9, -3px 4px 0 #bbb;
+          box-shadow: 1px 1px 0 #ccc, 2px 2px 0 #c9c9c9, 3px 4px 0 #bbb, -1px 1px 0 #ccc, -2px 2px 0 #c9c9c9, -3px 4px 0 #bbb;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fceabb), color-stop(50%, #fccd4d), color-stop(51%, #f8b500), to(#fbdf93));
+  background: -webkit-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+  background: linear-gradient(to bottom, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+  padding-top: 6px; }
+
+label:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcecfc), color-stop(50%, #fba6e1), color-stop(51%, #fd89d7), to(#ff7cd8));
+  background: -webkit-linear-gradient(top, #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%);
+  background: linear-gradient(to bottom, #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%); }
+
+label:active {
+  background: -webkit-linear-gradient(45deg, #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%);
+  background: linear-gradient(45deg, #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%);
+  padding-top: 5px; }
+
+input {
+  height: 30px; }
+
+.drag {
+  color: green;
+  opacity: 0.5; }
+
+.over {
+  color: red; }
+
+.select {
+  color: green; }
+
+.inp {
+  width: 100px; }
+
+.content {
+  position: absolute;
+  top: 300px;
+  left: 40%;
+  width: 300px; }
+
+.error {
+  color: red; }
